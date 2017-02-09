@@ -1,0 +1,37 @@
+[
+  {
+    "question" : "Who is the president of India?",
+    "choices" : [{"option" : "pratibha patil", "id" : 1}, {"option" : "Abdul Kalam", "id" : 2}, {"option" : "Narendra Modi", "id" : 3}, {"option" : "Pranab Mukherjee", "id" : 4}],
+    "questionType" : "single",
+    "questionId" : 1,
+    "correctOption" : 4
+  },
+  {
+    "question" : "Which Indian city is called the Manchester of South India?",
+    "choices" : [{"option" : "Chennai", "id" : 1}, {"option" : "Bangalore", "id" : 2}, {"option" : "Mumbai", "id" : 3}, {"option" : "Coimbatore", "id" : 4}],
+    "questionType" : "single",
+    "questionId" : 2,
+    "correctOption" : 4
+  },
+  {
+    "question" : "Which is the oldest mountain in India?",
+    "choices" : [{"option" : "Himalaya", "id" : 1}, {"option" : "Vindhyas", "id" : 2}, {"option" : "Aravalli", "id" : 3}, {"option" : "Nilgiris", "id" : 4}],
+    "questionType" : "single",
+    "questionId" : 3,
+    "correctOption" : 3
+  },
+  {
+    "question" : "Who among the following won the a Gold medal in Rio 2016 paralympic?",
+    "choices" : [{"option" : "Varun Bhati", "id" : 1}, {"option" : "Mariyappan Thangavelu", "id" : 2}, {"option" : "Deepa Malik", "id" : 3}],
+    "questionType" : "single",
+    "questionId" : 4,
+    "correctOption" : 2
+  },
+  {
+    "question" : "Who is the current Prime minister of England?",
+    "choices" : [{"option" : "Theresa May", "id" : 1}, {"option" : "David Cameron", "id" : 2}, {"option" : "Tony Blair", "id" : 3}, {"option" : "Margaret Thatcher", "id" : 4}],
+    "questionType" : "single",
+    "questionId" : 5,
+    "correctOption" : 1
+  }
+]

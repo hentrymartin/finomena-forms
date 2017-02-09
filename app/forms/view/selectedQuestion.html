@@ -1,0 +1,17 @@
+<div class="selected-question">
+    <div class="col-lg-12">
+        <div class="col-lg-1 question-number"><span class="text">{{currentQuestion.questionId}}</span></div>
+        <div class="col-lg-11 item">
+            <div class="each-question col-lg-12">
+                <span class="question">{{currentQuestion.question}}</span>
+            </div>
+            <div class="options col-md-12">
+                <div data-ng-repeat="choice in currentQuestion.choices" class="option">
+                    <div class="choice-item choice-{{choice.id}}" data-ng-click="selectThisOption(choice, $event)">
+                        <span>{{choice.option}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

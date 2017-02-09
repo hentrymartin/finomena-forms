@@ -1,0 +1,38 @@
+<div class="form-widget">
+    <div class="user-name-wrapper animate-if" data-ng-if="!vm.isNameEntered && !vm.showResult">
+        <div class="input-group">
+            <input type="text" data-ng-model="vm.userName" class="form-control" placeholder="Name" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2" data-ng-click="vm.proceedNext()">Proceed</span>
+        </div>
+    </div>
+    <div class="questions-wrapper animate-if" data-ng-if="vm.isNameEntered && !vm.showResult">
+        <list-questions></list-questions>
+    </div>
+
+    <div class="result" data-ng-if="vm.showResult">
+        <div class="col-lg-4">
+            <div class="title">Graphical representation of correct and wrong answers</div>
+            <result-graph></result-graph>
+        </div>
+        <div class="col-lg-8">
+            <div class="title">
+                <span>Questions with selected answers and actual answers</span>
+            </div>
+            <div class="result-info col-lg-12">
+                <div class="each-question col-lg-12" data-ng-repeat="question in vm.result">
+                    <div class="question">{{question.question}}</div>
+                    <div class="col-lg-12 answers">
+                        <div class="col-lg-6">
+                            <span>Your Answer : </span>
+                            <span data-ng-class="{'correct-answer' : question.isAnswerRight, 'wrong-answer' : !question.isAnswerRight}">{{question.selectedAnswer}}</span>
+                        </div>
+                        <div class="col-lg-6 actual-answer">
+                            <span>Actual Answer : </span>
+                            <span class="actual-answer">{{question.correctAnswer}}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

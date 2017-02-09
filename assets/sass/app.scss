@@ -1,0 +1,183 @@
+
+body, html, .view-frame, .forms-wrapper, .form-widget {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #848484;
+}
+
+.forms-wrapper {
+  background: #e6fffe;
+
+  .user-name-wrapper {
+    max-width: 400px;
+    margin: 0px auto;
+    position: relative;
+    top: 50%;
+    .input-group {
+      width: 100%;
+      input {
+        border-radius: 0px;
+        height: 60px;
+      }
+      span {
+        background: #20c497;
+        color: white;
+        border-radius: 0;
+        width: 110px;
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.5s;
+        &:hover {
+          background: #1fb38b;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  .questions-wrapper {
+    height: 100%;
+    .user-name {
+      max-width: 700px;
+      margin: 0 auto;
+      padding-top: 75px;
+      span {
+        font-family: cursive;
+        font-size: 19px;
+      }
+    }
+    .list-of-questions {
+      position: relative;
+      top: 25%;
+      .selected-question {
+        max-width: 700px;
+        margin: 0 auto;
+        .question-number {
+          background: #1ABC9C;
+          color: white;
+          font-size: 35px;
+          font-weight: 700;
+          .text {
+
+          }
+        }
+        .item {
+          .options {
+            .option {
+              padding-top: 10px;
+              padding-bottom: 10px;
+              margin-bottom: 6px;
+              margin-right: 5px;
+              font-size: 18px;
+              cursor: pointer;
+              //transition: font-size 0.5s;
+              padding-left: 5px;
+              position: relative;
+              min-height: 50px;
+              &:hover {
+                border: 1px solid #1ABC9C;
+                color: #1ABC9C;
+                font-size: 22px;
+              }
+              .choice-item {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                line-height: 100%;
+                padding-top: 7px;
+                padding-left: 2px;
+                overflow: hidden;
+                span {
+                  color: #848484;
+                  z-index: 10000;
+                  position: relative;
+                  mix-blend-mode: difference;
+                }
+              }
+            }
+          }
+        }
+        .question {
+          font-size: 35px;
+        }
+        .choice {
+
+        }
+      }
+    }
+  }
+
+  .result {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 100px;
+    .title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+    .result-info {
+      font-size: 16px;
+      .question {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .answers {
+        padding: 0;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        div {
+          padding : 0;
+        }
+      }
+      .correct-answer {
+        color: #098609;
+        padding: 0;
+      }
+      .wrong-answer {
+        color: #ef4242;
+        padding: 0;
+      }
+      .actual-answer {
+        color : orange;
+        padding: 0;
+      }
+    }
+    .graph {
+
+    }
+  }
+}
+
+
+//This is animation classes for ng-enter and ng-leave
+.animate-if.ng-enter, .animate-if.ng-leave {
+  transition:all cubic-bezier(0.250, 0.460, 0.450, 0.940) 0.5s;
+}
+
+.animate-if.ng-enter,
+.animate-if.ng-leave.ng-leave-active {
+  opacity:0;
+}
+
+.animate-if.ng-leave,
+.animate-if.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.bubble {
+  border-radius: 50%;
+  position: absolute;
+  -webkit-transform: scale3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+  background-color: #1ABC9C;
+  margin-left: -50%;
+  margin-top:-50%;
+}
